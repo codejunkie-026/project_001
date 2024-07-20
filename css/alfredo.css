@@ -1,0 +1,836 @@
+:root{
+    --bs-dark: #000;
+    --accent-color: #ffc107;
+    --accent-subtle: #ffc107c7;
+    --bs-orange: #fd7e14;
+}
+
+/* alfredo body section
+==================================== */
+.body{
+    font-family: georgia;
+}
+
+/* alfredo scrollspy
+======== */
+#back-to-top{
+    background: var(--accent-color);
+    color: #000000;
+}
+
+
+/* alfredo header section
+========================================== */
+.ghlheader{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.ghl{
+    background: var(--accent-color);
+}
+.ghlli{
+    border-bottom: 5px solid var(--accent-color);
+    visibility: visible;
+}
+.ghll{
+    visibility: visible;
+}
+.ghll:hover{
+    border-bottom: 5px solid var(--accent-color);
+}
+#cheese{
+    color: black;
+    background: var(--accent-subtle);
+}
+.cheesehead{
+    background-image: url(../images/header/pexels-polina-tankilevitch-4109945.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* alfredo aboutus section
+==================================== */
+.about .section-title{
+    text-align: center;
+    margin-top: 15px;
+}
+.about h3 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+  
+.about .book-a-table {
+    text-align: center;
+    border: 4px solid color-mix(in srgb, var(--default-color), transparent 30%);
+    padding: 22px;
+    border: 5px solid;
+}
+  
+.about .book-a-table h3 {
+    font-family: var(--default-font);
+    margin: 0 0 0 0;
+    font-size: 24px;
+}
+  
+.about .book-a-table p {
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+}
+  
+.about .fst-italic {
+    color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
+}
+  
+.about .content ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.about .content ul li {
+    padding: 0 0 10px 30px;
+    position: relative;
+}
+  
+.about .content ul i {
+    position: absolute;
+    font-size: 20px;
+    left: 0;
+    top: -3px;
+    color: var(--accent-color);
+}
+  
+.about .content p:last-child {
+    margin-bottom: 0;
+}
+  
+.about .play-btn {
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+    overflow: hidden;
+}
+  
+.about .play-btn:before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    animation-delay: 0s;
+    animation: pulsate-btn 2s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid color-mix(in srgb, var(--accent-color), transparent 30%);
+    top: -15%;
+    left: -15%;
+    background: rgba(198, 16, 0, 0);
+}
+  
+.about .play-btn:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 100;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+  
+.about .play-btn:hover:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 200;
+    animation: none;
+    border-radius: 0;
+}
+  
+.about .play-btn:hover:after {
+    border-left: 15px solid var(--accent-color);
+    transform: scale(20);
+}
+  
+@keyframes pulsate-btn {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+}
+  
+/* alfredo whyus section
+================================ */
+.why-us {
+    --background-color: color-mix(in srgb, var(--default-color), transparent 94%);
+}
+  
+.why-us .why-box {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    padding: 30px;
+}
+  
+.why-us .why-box h3 {
+    color: var(--contrast-color);
+    font-family: var(--default-font);
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+  
+.why-us .why-box p {
+    margin-bottom: 30px;
+}
+  
+.why-us .why-box .more-btn {
+    display: inline-block;
+    background: color-mix(in srgb, var(--contrast-color), transparent 85%);
+    padding: 8px 40px 10px 40px;
+    color: var(--contrast-color);
+    transition: all ease-in-out 0.4s;
+    border-radius: 50px;
+}
+  
+.why-us .why-box .more-btn i {
+    font-size: 14px;
+}
+  
+.why-us .why-box .more-btn:hover {
+    color: var(--accent-color);
+    background: var(--contrast-color);
+}
+  
+.why-us .icon-box {
+    background-color: var(--contrast-color);
+    text-align: center;
+    padding: 40px 30px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+  
+.why-us .icon-box i {
+    color: var(--accent-color);
+    font-size: 32px;
+    margin-bottom: 30px;
+    background: color-mix(in srgb, var(--accent-color), transparent 95%);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    transition: 0.3s;
+}
+  
+.why-us .icon-box h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    font-family: var(--default-font);
+}
+  
+.why-us .icon-box p {
+    font-size: 15px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+  
+.why-us .icon-box:hover i {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+}
+
+/* alfredo stats section
+================================= */
+.stats {
+    --default-color: #ffffff;
+    --background-color: #000000;
+    position: relative;
+    padding: 120px 0;
+}
+  
+.stats img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+  
+.stats:before {
+    content: "";
+    background: color-mix(in srgb, var(--background-color), transparent 40%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+  
+.stats .container {
+    position: relative;
+    z-index: 3;
+}
+  
+.stats .stats-item {
+    padding: 30px;
+    width: 100%;
+}
+  
+.stats .stats-item span {
+    font-size: 48px;
+    display: block;
+    color: var(--default-color);
+    font-weight: 700;
+}
+  
+.stats .stats-item p {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+/* alfredo shelf section
+============================== */
+.vesitable .vesitable-item {
+    height: 100%;
+    transition: 0.5s;
+}
+
+.vesitable .vesitable-item:hover {
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+}
+
+.vesitable .vesitable-item .vesitable-img {
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+
+.vesitable .vesitable-item .vesitable-img img {
+    transition: 0.5s;
+}
+
+.vesitable .vesitable-item .vesitable-img img:hover {
+    transform: scale(1.2);
+}
+
+.vesitable .owl-stage {
+    margin: 50px 0;
+    position: relative;
+}
+
+.vesitable .owl-nav .owl-prev {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    color: var(--accent-color);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+
+.vesitable .owl-nav .owl-prev:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+.vesitable .owl-nav .owl-next {
+    position: absolute;
+    top: -8px;
+    right: 88px;
+    color: var(--accent-color);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.vesitable .owl-nav .owl-next:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+/* alfredo bestseller
+============================ */
+.bestselink, a{
+    text-decoration: none;
+}
+.bestsellcard, i{
+    color: var(--accent-color);
+}
+
+/* alfredo chefs
+========================= */
+.chefs .team-member {
+    box-shadow: 0px 0 30px color-mix(in srgb, var(--default-color), transparent 92%);
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+  
+.chefs .team-member .member-img {
+    position: relative;
+    overflow: hidden;
+}
+  
+.chefs .team-member .member-img:after {
+    position: absolute;
+    content: "";
+    left: -1px;
+    right: -1px;
+    bottom: 0;
+    height: 100%;
+    background: url(../img/team-shape.svg) no-repeat center bottom;
+    background-size: contain;
+    z-index: 1;
+}
+  
+.chefs .team-member .social {
+    position: absolute;
+    right: -100%;
+    top: 30px;
+    opacity: 0;
+    border-radius: 4px;
+    transition: 0.5s;
+    background: color-mix(in srgb, var(--background-color), transparent 60%);
+    z-index: 2;
+}
+  
+.chefs .team-member .social a {
+    transition: color 0.3s;
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    margin: 15px 12px;
+    display: block;
+    line-height: 0;
+    text-align: center;
+}
+  
+.chefs .team-member .social a:hover {
+    color: var(--default-color);
+}
+  
+.chefs .team-member .social i {
+    font-size: 18px;
+}
+  
+.chefs .team-member .member-info {
+    padding: 10px 15px 20px 15px;
+}
+  
+.chefs .team-member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: var(--default-font);
+}
+  
+.chefs .team-member .member-info span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+}
+  
+.chefs .team-member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 15px;
+    line-height: 26px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+  
+.chefs .team-member:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 0 30px color-mix(in srgb, var(--default-color), transparent 85%);
+}
+  
+.chefs .team-member:hover .social {
+    right: 8px;
+    opacity: 1;
+}
+
+/* alfredo's gallery
+=============================== */
+.gallery {
+    --background-color: color-mix(in srgb, var(--default-color), transparent 94%);
+    overflow: hidden;
+}
+  
+.gallery .swiper-wrapper {
+    height: auto;
+}
+  
+.gallery .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+  
+.gallery .swiper-pagination .swiper-pagination-bullet {
+    background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+    border: 0;
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+}
+  
+.gallery .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--accent-color);
+    opacity: 1;
+}
+  
+.gallery .swiper-slide-active {
+    text-align: center;
+}
+  
+@media (min-width: 992px) {
+    .gallery .swiper-wrapper {
+      padding: 40px 0;
+}
+  
+.gallery .swiper-slide-active {
+      background: var(--background-color);
+      border: 6px solid var(--accent-color);
+      padding: 4px;
+      z-index: 1;
+      transform: scale(1.2);
+      transition: none;
+    }
+}
+
+/* alfredo's testimonial
+============================= */
+.testimonials {
+    --background-color: color-mix(in srgb, var(--default-color), transparent 94%);
+}
+  
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+    overflow: hidden;
+}
+  
+.testimonials .testimonial-item .testimonial-content {
+    border-left: 3px solid var(--accent-color);
+    padding-left: 30px;
+}
+  
+.testimonials .testimonial-item .testimonial-img {
+    border-radius: 50%;
+    border: 4px solid var(--background-color);
+    margin: 0 auto;
+}
+  
+.testimonials .testimonial-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+  
+.testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+    margin: 0 0 10px 0;
+}
+  
+.testimonials .testimonial-item .stars i {
+    color: #ffc107;
+    margin: 0 1px;
+}
+  
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+    color: color-mix(in srgb, var(--accent-color), transparent 50%);
+    font-size: 26px;
+    line-height: 0;
+}
+  
+.testimonials .testimonial-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+}
+  
+.testimonials .testimonial-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+    transform: scale(-1, -1);
+}
+  
+.testimonials .testimonial-item p {
+    font-style: italic;
+}
+  
+.testimonials .swiper-wrapper {
+    height: auto;
+}
+  
+.testimonials .swiper-pagination {
+    margin-top: 30px;
+    position: relative;
+}
+  
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+    opacity: 1;
+}
+  
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--accent-color);
+}
+
+/* alfredo's contact
+================================ */
+.contact .php-email-form {
+    box-shadow: 0px 0px 20px color-mix(in srgb, var(--default-color), transparent 90%);
+    padding: 30px;
+    margin-top: 30px;
+}
+  
+@media (max-width: 575px) {
+    .contact .php-email-form {
+      padding: 20px;
+    }
+}
+  
+.contact .php-email-form .error-message {
+    display: none;
+    background: #df1529;
+    color: #ffffff;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+  
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #ffffff;
+    background: #059652;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+  
+.contact .php-email-form .loading {
+    display: none;
+    background: var(--background-color);
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+}
+  
+.contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid var(--accent-color);
+    border-top-color: var(--background-color);
+    animation: animate-loading 1s linear infinite;
+}
+  
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+    color: var(--default-color);
+    background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+}
+  
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+    border-color: var(--accent-color);
+}
+  
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+  
+.contact .php-email-form button[type=submit] {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+  
+.contact .php-email-form button[type=submit]:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+  
+@keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+/* alfredo's footer
+=========================== */
+#footer .bottom{
+    background: #212529;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0%;
+}
+#footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #fff;
+}
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3 {
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top .footer-contact h3 span {
+    color: #fcfcfc;
+}
+#footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+#footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #106eea;
+    font-size: 18px;
+    line-height: 1;
+}
+#footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+#footer .footer-top .footer-links ul a {
+    color: #fafafa;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+#footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #106eea;
+}
+#footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: var(--accent-color);
+    color: var(--default-color);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+#footer .footer-top .social-links a:hover {
+    background: #3b8af2;
+    color: #fff;
+    text-decoration: none;
+}
+#footer .copyright {
+    text-align: center;
+    float: left;
+}
+#footer .credits {
+    float: right;
+    text-align: center;
+    font-size: 13px;
+    color: #000000;
+}
+#footer .credits .nobbit{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--bs-bglight);
+}
+@media (max-width: 768px) {
+    #footer .copyright,
+    #footer .credits {
+      float: none;
+      text-align: center;
+      padding: 2px 0;
+    }
+}
