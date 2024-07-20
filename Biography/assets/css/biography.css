@@ -1,0 +1,57 @@
+/* this is root the supreme code that overrides everything */
+:root{
+    --bs-dark: #0000;
+}
+
+/* this is where general code that affects the entire site
+so youll call this body */
+.body{
+    /*fontfamily is to declare the font of your site*/
+    font-family: 'Gothic Medium';
+} 
+
+/* this is the box class from the html
+vh means view height thats is the lenght of your full screen
+vw means view width thats the width of your full screen
+*/
+.box{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+/* biohead{bioghraphyhead} 
+background image is for inputting your image and the url is to search for the file on your system
+background position is to dictate the bosition of your background image
+background size adjusts the size
+background repeats stops the error of repeating background images
+*/
+.biohead{
+    background-image: url(../images/calendar-1990453_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.boxend{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+.content{
+    text-decoration: none;
+    outline: none;
+}
+.content2{
+    padding-top: 5rem;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}

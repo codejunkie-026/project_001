@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+    <!-- css main file -->
+    <link rel="stylesheet" href="./assets/css/biography.css">
+    <!-- bootstrap file, to get started with bootstrap you must first link to the main bootstrap css file. this file should
+    be within the resources of your code. alse don't forget to link the bootstrap js file at the bottom -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
+<body class="body">
+    <div>
+        <!-- this navbar is collapsible bootstrap-->
+        <!-- nav is the tag, 
+         ~navbar is the main classname
+         ~navbar-expand-lg means the navbar will only expand if the display is large(pc,tab,laptop screen) and collapse on smaller displays
+         ~fixedtop means the navbar will be fixed to the top of the screen
+         ~justify-content-center centralizes the navbar items
+         ~navbar-dark turns your navbar default to dark
+         ~bg-dark makes the background dark
+         ~container-fluid means the navbar will span across the screen
+         -->
+        <nav class="navbar navbar-expand-lg fixed-top justify-content-center navbar-dark bg-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">My~Bio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse justify-content-center navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">About_me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Apiration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active disabled" aria-disabled="true">Enemies</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <div>
+            <!-- general coding starts here this div{division} has 2 classes Box & biohead{bioghraphyhead}
+             Bootstrap terms
+             ~fw-bold means fontweight bold
+             ~display-5: display works the same way header does but its bootstrap
+             ~container: the same thing as css borderbox but easier
+             ~px- padding left&right
+             ~px- padding top&bottom
+             ~mx- margin left&right
+             ~my- margin top&bottom
+             ~text-light turns your text white
+             ~text-dark turns your text black
+             ~text-capitalize makes your text you get na
+             ~text-center centralizes your text
+             -->
+            <div class="box biohead">
+                <div class="content">
+                    <div class="fw-bold">CHAPTER_1</div> 
+                    <br>
+                    <div class="display-5">"Welcome To My Biography."</div>
+                </div>
+            </div>
+            <div id="about" class="boxend text-dark">
+                <div class="container px-3 content2">
+                    <p class="">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam incidunt expedita suscipit, 
+                        eligendi laudantium eos fugiat ipsum! Iste sapiente nisi similique nostrum voluptatum cumque 
+                        earum, reprehenderit blanditiis ullam, beatae dolorem?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis alias quis iusto 
+                        laborum porro itaque, eaque nostrum quod hic voluptatem officia earum distinctio cupiditate 
+                        odit rerum quidem, aliquam est.
+                    </p>
+                    <hr>
+                    <article>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum atque facilis expedita ut 
+                        soluta veritatis eum in? Ipsam aperiam tenetur sunt repellendus est quas. Pariatur cum quos atque at quibusdam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perferendis obcaecati laborum mollitia illum adipisci 
+                        corrupti fugiat laboriosam quos architecto, minus molestiae atque quod repudiandae ullam, odio dolores eveniet voluptatem!
+                    </article>
+                    <blockquote>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, dolores non eos qui, perferendis dolorum hic adipisci 
+                        vero asperiores necessitatibus sit incidunt expedita, explicabo quae excepturi odio totam fuga maiores.
+                    </blockquote>
+
+                    <p class="display-3 text-capitalize">elucidate</p>
+                    <hr style="margin: auto;" width="60%">
+
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti nobis quasi laudantium accusantium. Voluptatum exercitationem 
+                        similique facilis nihil fugit tenetur enim, laborum nobis deleniti repellendus beatae saepe, harum quo.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quis dolorum repellendus sapiente corporis modi voluptatibus, dolor, iusto 
+                        molestiae cumque aspernatur maxime quo labore quasi rem magnam sequi inventore. Vel.
+                    </article>
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptas modi necessitatibus blanditiis et nobis pariatur corporis, quo, 
+                        voluptatibus, molestiae soluta veritatis odit velit ea. Ad nam quae corrupti tenetur.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ad unde quasi sapiente iure laborum esse fuga vel eius similique tenetur amet, 
+                        quod, quibusdam, iste exercitationem suscipit fugit neque accusamus?
+                    </p>
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptas modi necessitatibus blanditiis et nobis pariatur corporis, quo, 
+                        voluptatibus, molestiae soluta veritatis odit velit ea. Ad nam quae corrupti tenetur.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ad unde quasi sapiente iure laborum esse fuga vel eius similique tenetur amet, 
+                        quod, quibusdam, iste exercitationem suscipit fugit neque accusamus?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptas modi necessitatibus blanditiis et nobis pariatur corporis, quo, 
+                        voluptatibus, molestiae soluta veritatis odit velit ea. Ad nam quae corrupti tenetur.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ad unde quasi sapiente iure laborum esse fuga vel eius similique tenetur amet, 
+                        quod, quibusdam, iste exercitationem suscipit fugit neque accusamus?
+                    </p>
+                </div>
+                <!-- this is your footer while learning this you might comes across issues where your footer is not at the bottom
+                 of your page no worry code go whine you but no panic
+                 introduction to rows and columns 
+                 (you actually need to learn this if you want your footer to look better)
+                 -->
+                <div class="container-fluid bg-dark text-light py-3">
+                    <p class="px-3 text-capitalize display-4 text-center">
+                        a simple footer
+                    </p>
+                    <div class="container row m-auto">
+                        <p class="col-sm-3 text-center">
+                            Contact<br>
+                            09094738588 <br>
+                            Email <br>
+                            Hogaontop@gmail.com
+                        </p>
+                        <p class="col-sm-3 text-center">
+                            Address<br>
+                            no.2 okeke street,<br>
+                            agbor,<br> 
+                            anambra state
+                        </p>
+                        <p class="col-sm-3 text-center">
+                            Working Hours<br>
+                            5am-6pm <br>
+                            monday-friday <br>
+                            maybe saturday
+                        </p>    
+                        <p class="col-sm-3 text-center">
+                            Eating Time <br>
+                            not your business but i'll be
+                            having amala and egusi <br>
+                            no meat 
+                        </p>    
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+
+
+    <!-- bootstrap js file, also very important do not forget to link it if not you will get errors from your bootstrap code-->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
