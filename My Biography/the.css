@@ -1,0 +1,21 @@
+html{
+    font-size: 22px
+
+}
+body  {
+    background-color: #fd7e14 ;
+    color: rgb(13, 13, 13);
+
+}
+.blank, li, a{
+    text-decoration: none;
+}
+a{color: pink;
+
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: antiquewhite;
+}
