@@ -1,0 +1,40 @@
+html{
+    font-size: 22px
+
+}
+
+body  {
+    background-color: black;
+    color: gold;
+
+a{
+    color: antiquewhite;
+}
+a:visited{
+    color:black;
+}
+a:hover{
+    color: gold;
+}
+}
+.blank, li, a{
+    text-decoration: none;
+}
+a{
+    color: antiquewhite;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: black;
+}
+
+.none{
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+
