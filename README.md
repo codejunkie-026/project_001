@@ -1,2 +1,2 @@
 # project2024
-To preview the latest of projects on the team
+To promote teamwork and review the latest of projects on the team
