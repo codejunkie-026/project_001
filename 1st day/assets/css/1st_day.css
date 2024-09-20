@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Geneva;
+}
+
+.landiing{
+    height: 600px;
+    background-image: linear-gradient(rgba(56, 50, 50, 0.573), rgba(0, 0, 0, 0.541)) ,url(../img/milad-fakurian-0McGIkeEKtw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.highred{
+    color: red;
+}
+.none{
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+.none:hover{
+    color: black;
+}
+/* 
+firstday navbar
+=======================*/
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: white;
+}
+.navbar ul a{
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+.navbar ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.navbar ul a::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.5s;
+}
+.navbar ul a:hover::after{
+    width: 100%;
+}
+/*
+firstday navbar content
+===================*/
+.content{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 30px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    max-width: 450px;
+}
+.content-btn{
+    width: 200px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+.content-btn:hover{
+    background: white;
+    color: black;
+}
+
+/*
+getting started
+===================*/
+.gettingst{
+    background: rgba(233, 229, 229, 0.505);
+    border: 1px solid black;
+    box-shadow: black;
+    border-radius: 10px;
+    margin: 50px 10px;
+    padding: 20px;
+}
+.gettingstart{
+    text-align: center;
+}
